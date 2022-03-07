@@ -21,9 +21,9 @@ public class FillWarehouse implements WarehouseFill {
     public void fillWarehouse() {
         List<CustomArray> listCustomArray = Repository.getInstance().getAll();
         for (var customArray : listCustomArray) {
-            CustomArrayEvent event = new CustomArrayEvent(customArray);
-            new CustomArrayObserverImpl().parametersChanged(event);
+            CustomArrayObserverImpl observer = new CustomArrayObserverImpl();
+            customArray.attach(observer);
+            customArray.notifyObservers();
         }
-
     }
 }
