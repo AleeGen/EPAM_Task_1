@@ -10,6 +10,7 @@ public class CustomArrayEvent extends EventObject {
         super(source);
     }
 
+    @Override
     public CustomArray getSource() {
         return (CustomArray) super.getSource();
     }

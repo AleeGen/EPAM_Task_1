@@ -17,12 +17,12 @@ public class SpecificationAverageElementМore implements Specification {
             return false;
         }
         int[] array = customArray.getArray();
-        int sum = array[0];
+        double sum = array[0];
         for (int i = 1; i < array.length; i++) {
             sum += array[i];
         }
         double average = sum / array.length;
-        boolean result = (average > averageElement);
+        boolean result = average > averageElement;
         return result;
     }
 }

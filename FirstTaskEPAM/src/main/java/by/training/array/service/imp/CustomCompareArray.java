@@ -3,7 +3,6 @@ package by.training.array.service.imp;
 
 import by.training.array.service.ArrayOfArraysCompare;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CustomCompareArray implements ArrayOfArraysCompare {
@@ -33,7 +32,6 @@ public class CustomCompareArray implements ArrayOfArraysCompare {
     }
 
     public boolean arrayCompare(int[][] array1, List<int[]> array2) {
-
         if (array1 == null ^ array2 == null) {
             return false;
         }

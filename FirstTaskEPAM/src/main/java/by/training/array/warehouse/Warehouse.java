@@ -38,7 +38,7 @@ public class Warehouse {
     public CustomArrayParameters get(Integer id) throws CustomUniversalException {
         CustomArrayParameters result = customArrayParametersMap.get(id);
         if (result == null) {
-            logger.log(Level.ERROR, id + " element not found");
+            logger.log(Level.ERROR, "{} element not found", id);
             throw new CustomUniversalException(id + " element not found");
         }
         return result;

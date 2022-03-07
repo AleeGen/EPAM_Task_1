@@ -13,7 +13,7 @@ public class SpecificationCountElementМore implements Specification {
     @Override
     public boolean specify(CustomArray customArray) {
         int length = customArray.getArray().length;
-        boolean result = (length > countElement);
+        boolean result = length > countElement;
         return result;
     }
 }

@@ -2,9 +2,6 @@ package by.training.array.service.imp;
 
 import by.training.array.service.IdGenerator;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.UUID;
 
 public class GeneratorId implements IdGenerator {
     private static int id = 0;

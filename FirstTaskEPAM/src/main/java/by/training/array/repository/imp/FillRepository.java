@@ -28,7 +28,7 @@ public class FillRepository implements RepositoryFill {
             List<String> notParserList = takeString.FileRead(path);
             readyArray = parserString.arrayStringToArrayNumber(notParserList);
         } catch (IOException e) {
-            logger.log(Level.ERROR, path + " - file not found");
+            logger.log(Level.ERROR, "{} - file not found", path);
             throw e;
         }
         for (var array : readyArray) {

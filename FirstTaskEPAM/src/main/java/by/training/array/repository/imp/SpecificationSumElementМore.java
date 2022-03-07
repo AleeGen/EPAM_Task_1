@@ -22,7 +22,7 @@ public class SpecificationSumElementМore implements Specification {
         for (int i = 1; i < array.length; i++) {
             sum += array[i];
         }
-        boolean result = (sum > sumElement);
+        boolean result = sum > sumElement;
         return result;
     }
 }

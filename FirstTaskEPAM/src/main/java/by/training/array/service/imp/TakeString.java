@@ -1,11 +1,10 @@
 package by.training.array.service.imp;
 
-import by.training.array.exception.CustomUniversalException;
+
 import by.training.array.service.StringTake;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;

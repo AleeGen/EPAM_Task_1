@@ -24,7 +24,7 @@ public class SpecificationMinElementМore implements Specification {
                 min = array[i];
             }
         }
-        boolean result = (min > minElement);
+        boolean result = min > minElement;
         return result;
     }
 }

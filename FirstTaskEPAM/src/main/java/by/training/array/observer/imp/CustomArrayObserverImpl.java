@@ -13,7 +13,6 @@ import java.util.OptionalDouble;
 import java.util.OptionalInt;
 
 public class CustomArrayObserverImpl implements CustomArrayObserver {
-    static final Logger logger = LogManager.getLogger();
 
     @Override
     public void parametersChanged(CustomArrayEvent event) {

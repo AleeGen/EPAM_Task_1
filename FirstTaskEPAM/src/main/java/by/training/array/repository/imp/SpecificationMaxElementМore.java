@@ -24,7 +24,7 @@ public class SpecificationMaxElementМore implements Specification {
                 max = array[i];
             }
         }
-        boolean result = (max > maxElement);
+        boolean result = max > maxElement;
         return result;
     }
 

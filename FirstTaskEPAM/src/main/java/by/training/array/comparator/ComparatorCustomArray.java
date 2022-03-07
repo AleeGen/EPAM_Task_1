@@ -26,5 +26,5 @@ public enum ComparatorCustomArray implements Comparator<CustomArray> {
             long first2 = o2.getArray()[0];
             return Long.compare(first1, first2);
         }
-    };
+    }
 }

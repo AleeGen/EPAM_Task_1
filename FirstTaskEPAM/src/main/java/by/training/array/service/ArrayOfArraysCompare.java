@@ -1,7 +1,7 @@
 package by.training.array.service;
 
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public interface ArrayOfArraysCompare {

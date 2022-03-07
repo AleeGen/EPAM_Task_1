@@ -57,8 +57,7 @@ public class CustomArrayParameters {
 
     @Override
     public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        String result = stringBuilder.append("CustomArrayParameters{")
+        String result = new StringBuilder().append("CustomArrayParameters{")
                 .append("sumElement=").append(sumElement)
                 .append(", averageElement=").append(averageElement)
                 .append(", maxElement=").append(maxElement)

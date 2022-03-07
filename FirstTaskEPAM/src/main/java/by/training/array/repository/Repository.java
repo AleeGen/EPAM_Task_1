@@ -45,12 +45,12 @@ public class Repository {
         return customArrays.stream().toList();
     }
 
-    public CustomArray set(int index, CustomArray customArray) { //// TODO: 06.03.2022 (Вроде как Блинов сказал, что изменения эти не учитывать в Warehouse) 
+    public CustomArray set(int index, CustomArray customArray) {
         return customArrays.set(index, customArray);
     }
 
     public List<CustomArray> query(Specification specification) {
-        List<CustomArray> result = customArrays.stream().filter(o -> specification.specify(o)).toList();
+        List<CustomArray> result = customArrays.stream().filter(specification::specify).toList();
         return result;
     }
 

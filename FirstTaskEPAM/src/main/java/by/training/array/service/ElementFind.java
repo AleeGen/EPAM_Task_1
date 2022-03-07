@@ -1,7 +1,7 @@
 package by.training.array.service;
 
 import by.training.array.entity.CustomArray;
-import by.training.array.exception.CustomUniversalException;
+
 
 import java.util.OptionalInt;
 

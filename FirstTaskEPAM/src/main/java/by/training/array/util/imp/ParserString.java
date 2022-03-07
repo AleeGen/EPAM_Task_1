@@ -1,6 +1,6 @@
 package by.training.array.util.imp;
 
-import by.training.array.exception.CustomUniversalException;
+
 import by.training.array.util.StringParser;
 
 import java.util.ArrayList;
@@ -13,8 +13,8 @@ public class ParserString implements StringParser {
 
     @Override
     public List<int[]> arrayStringToArrayNumber(List<String> listString) {
-        if (listString.size() == 0) {
-            return new ArrayList<int[]>();
+        if (listString.isEmpty()) {
+            return new ArrayList<>();
         }
         List<int[]> result = new ArrayList<>();
 

@@ -2,20 +2,15 @@ package by.training.array.service.imp;
 
 
 import by.training.array.entity.CustomArray;
-import by.training.array.exception.CustomUniversalException;
 import by.training.array.service.ElementCalculator;
 import by.training.array.service.ElementFind;
 import by.training.array.service.ElementReplace;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.OptionalDouble;
 import java.util.OptionalInt;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+
 
 public class FindElement implements ElementCalculator, ElementFind, ElementReplace {
     final static Logger logger = LogManager.getLogger();
@@ -70,7 +65,7 @@ public class FindElement implements ElementCalculator, ElementFind, ElementRepla
             return OptionalDouble.empty();
         }
         double sum = takeSumElements(customArray).getAsInt();
-        double average = sum / (double) customArray.getArray().length;
+        double average = sum / customArray.getArray().length;
         return OptionalDouble.of(average);
     }
 
